@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashanth</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Employee Database Management</h1>
+            <button class="add-employee-btn">Add Employee</button>
+        </header>
+        <div class="employees-container">
+            <div class="employee-list-container">
+                <span class="employee-list-container-title">Employee List</span>
+                <div id="employee-list-el" className="employee-list-container-list">
+                </div>
+            </div>
+            <div class="employee-details-container">
+                <span class="employee-details-container-title">Employee Details</span>
+                <div id="employee-details-el" className="employee-details-container-info"></div>
+            </div>
+        </div>
+        <div class="add-employee-container">
+            <form class="addEmployee_create">
+                <h2> Add a New Employee</h2>
+                <div>
+                <input type="text" name="firstName" placeholder="First Name"  required/>
+                <input type="text" name="lastName" placeholder="Last Name" required/>
+            </div>
+            <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+          <input type="email" name="email" placeholder="Email" required/>
+          <input type="number" name="contactNumber" placeholder="Contact" required/>
+          <input type="number" name="salary" placeholder="Salary" required/>
+          <input type="text" name="address" placeholder="Address" required/>
+          <input type="date" name="dob" placeholder="Date of Birth" class="addEmployee_create--dob" required/>
+          <input type="submit" class="addEmployee_create--submit" value="Submit">
+            </form>
+        </div>
+</div>
+<script src="script.js"></script>
+<link rel="stylesheet" href="index.css" />
+</body>
+</html>

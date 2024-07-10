@@ -1,0 +1,102 @@
+:root {
+    --btn: #dbdbdb;
+    --btn-hover: #cacaca;
+    --item-bg: #f0f0f0;
+    --modal-bg: rgba(141, 141, 141, 0.541);
+  }
+body{
+    font-family: sans-serif;
+    padding: 0px 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.employees-container{
+    display: flex;   
+}
+.employees-container > div{
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 500px;
+}
+.employee-list-container{
+    width: 30%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.employee-list-container-list{
+    display: flex;
+    flex-direction: column;
+}
+.employee-list-item{
+    cursor:pointer;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: var(--item-bg);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.employee-list-item:hover,
+.selected {
+  background-color: var(--btn);
+}
+.employee-details-container{
+    width: 70%;
+}
+.employee-details-container-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selected-item{
+    color: red;
+}
+.profile-image{
+    height: 100px;
+    width: 100px;
+}
+.add-employee-container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-bg);
+}
+.addEmployee_create {
+    width: 400px;
+  background-color: white;
+  box-shadow: 0 0 50px grey;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  }
+  .addEmployee_create > div {
+    display: grid;
+    grid-template-columns: 48.1% 48.1%;
+    column-gap: 15px;
+  }
+  .addEmployee_create input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(236, 236, 236);
+  }
+
+  /* removes arrows from input type='number' */
+.addEmployee_create input::-webkit-outer-spin-button,
+.addEmployee_create input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
