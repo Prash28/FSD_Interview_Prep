@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.progress-bar-container{
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 20px;
+  background-color: lightgrey;
+}
+
+.progress-bar-container span{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.progress-bar-container div{
+  height: 100%;
+  width: 20%;
+  background-color: #00c251;
+  border-radius: 15px;
+}
