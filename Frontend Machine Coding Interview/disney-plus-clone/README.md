@@ -1,8 +1,13 @@
+Hey there! 🚀
+
 This React website is a Disney+ clone, inspired from youtube tutorial. I have also added few of my own additions/changes to the UI and functionality.
+
+**Tools used:** 
+React, Firebase, Redux and Styled Components
 
 Firebase hosted Link: https://disney-plus-clone-409b3.web.app/home
 
-Screenshots:
+**Screenshots:**
 
 ![image](https://github.com/user-attachments/assets/b730ac2d-ae3a-46a0-8030-55baf7641962)
 
